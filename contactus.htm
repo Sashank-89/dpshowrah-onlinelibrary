@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Delhi Public School Howrah Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    #contact-form input[type="text"],
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #0077cc;
+      border-radius: 5px;
+    }
+    
+    #contact-form input[type="submit"] {
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    #contact-form input[type="submit"]:hover {
+      background-color: #005299;
+    }
+    
+    #contact-info {
+      margin-top: 30px;
+      text-align: center;
+    }
+    
+    #contact-info h2 {
+      color: #0066cc;
+      font-size: 24px;
+    }
+    
+    #contact-info p {
+      color: #333;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    
+    #footer {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 style="font-size: 36px;">Contact Us</h1>
+  </div>
+  
+  <div id="content">
+    <div id="contact-form">
+      <h2 style="color: #0066cc; font-size: 24px;">Send us a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+    <div id="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> DPS Howrah, Amta Road near Santragachi Railway Station, Domjur, West Bengal, India</p>
+      <p><strong>Phone:</strong> +91 9073393402</p>
+      <p><strong>Email:</strong> enquiry@dpshowrah.in</p>
+      <img src="data:image/jpeg;base64,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" alt="Contact Image" style="max-width: 300px; margin-top: 20px;">
+    </div>
+  </div>
+  
+  <div id="footer">
+    <p>&copy; 2023 Delhi Public School Howrah Library. All rights reserved.</p>
+  </div>
+</body>
+</html

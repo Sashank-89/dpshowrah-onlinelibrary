@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Suggest a Book | Delhi Public School Howrah Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      background-color: #0368A7;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #content {
+      padding: 20px;
+      color: #333;
+    }
+    
+    #footer {
+      background-color: #0368A7;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .suggest-form {
+      margin-top: 20px;
+    }
+    
+    .suggest-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .suggest-form input[type="text"],
+    .suggest-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .suggest-form input[type="submit"] {
+      background-color: #0368A7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 4px;
+    }
+    
+    .suggest-form input[type="submit"]:hover {
+      background-color: #064A89;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 style="color: #fff;">Delhi Public School Howrah Library</h1>
+  </div>
+  
+  <div id="content">
+    <h2>Suggest a Book</h2>
+    <div class="image-container">
+      <img src="data:image/jpeg;base64,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" alt="Suggest a Book Image">
+    </div>
+    <br> 
+    <p>
+      Do you have a book in mind that you would like to see in our library collection? Please use the form below to suggest a book. We appreciate your input and will consider adding the suggested book to our collection if it meets our selection criteria.
+    </p>
+    <form class="suggest-form" action="submit_suggestion.php" method="post">
+      <label for="title">Book Title:</label>
+      <input type="text" id="title" name="title" required>
+      <br>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required>
+      <br>
+      <label for="publisher">Publisher:</label>
+      <input type="text" id="publisher" name="publisher" required>
+      <br>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+      <br>
+      <input type="submit" value="Submit Suggestion">
+    </form>
+  </div>
+  
+  <div id="footer">
+    <br>
+    <p>&copy; 2023 Delhi Public School Howrah Library. All rights reserved.</p>
+  </div>
+</body>
+</html>

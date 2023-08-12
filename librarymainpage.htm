@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Library | Delhi Public School Howrah Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      background-color: #005b96;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #content {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #footer {
+      background-color: #005b96;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    .search-box {
+      margin: 20px auto;
+      width: 400px;
+    }
+    
+    .search-box input[type="text"] {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .filter-options {
+      margin-bottom: 20px;
+    }
+    
+    .filter-options label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .book {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .book-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .book-author {
+      color: #666;
+      margin-bottom: 10px;
+    }
+    
+    .book-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #005b96;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Delhi Public School Howrah Online Library</h1>
+  </div>
+  
+  <div id="content">
+    <div class="search-box">
+      <input type="text" placeholder="Search by book name, publisher, author, or subject">
+    </div>
+    
+    <div class="filter-options">
+      <label for="category">Filter by category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="fiction">Fiction</option>
+        <option value="academic">Academic</option>
+        <option value="self-help">Self-help</option>
+        <option value="biography">Biography</option>
+      </select>
+    </div>
+    
+    <div class="book{ margin: 20px 0; }
+    
+    <div class="book-list">
+      <div class="book">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_kPUzNbBNdH7m_KkwH63yCZUuH3Gc3_Q0Q&usqp=CAU" alt="Book 1 Cover">
+        <h3 class="Book Title">NCERT BOOKS FOR CLASSES I-XII</h3>
+        <p class="Publisher">NCERT</p>
+        <a class="book-link" href="https://drive.google.com/drive/folders/1YlIcsSDHgTMHmLGEqsYD9gFbd1ylKcB-?usp=drive_link">Read Online</a>
+      </div>
+      <div class="book">
+        <img src="data:image/jpeg;base64,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" alt="Book 1 Cover">
+        <h3 class="Book Title">Neeraj Raj Jain ML Aggarwal Applied Mathematics Class XI</h3>
+        <p class="Publisher">APC BOOKS</p>
+        <a class="book-link" href="https://drive.google.com/file/d/1bRSsoODGu_Sq-5tLUB-J2bMFz0ByqOiM/view?usp=drive_link">Read Online</a>
+      </div>
+      <div class="book">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51dWhMY5nLL._AC_UL750_SR750,750_.jpg" alt="Book Cover">
+        <h3 class="Book Title">Rich Dad Poor Dad by Robert T. Kiyosaki</h3>
+        <p class="Publisher">PLATA PUBLISHING</p>
+        <a class="book-link" href="https://drive.google.com/file/d/1obWjEcO5_J6iEc10xT8pbpFkyeafXxcr/view?usp=drive_link">Read Online</a>
+      </div>
+      <div class="book">
+        <img src="https://images.randomhouse.com/cover/9781524779269?height=500" alt="Book 1 Cover">
+        <h3 class="Book Title">Atomic Habits by James Clear</h3>
+        <p class="Publisher">Penguin Random House</p>
+        <a class="book-link" href="https://drive.google.com/file/d/1VRL2xjHOBgCARwsQV0ZhphKlxMLDzHFv/view?usp=drive_link">Read Online</a>
+      </div>
+      
+      <!-- Add more books here -->
+    </div>
+  </div>
+  <br>
+<br>
+<br>
+  
+  <div id="footer">
+    <br>
+    <p>&copy; 2023 Delhi Public School Howrah Library. All rights reserved.</p>
+  </div>
+</body>
+</html>
